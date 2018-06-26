@@ -1,26 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180626 14:40:10.118" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<robot generated="20180626 14:45:46.659" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
 <suite source="C:\Users\Admin\Desktop\JenkinsTestJob\JenkinsJobTest\JenkinsJobTest.robot" id="s1" name="JenkinsJobTest">
-<test id="s1-t1" name="Open and Navigate Browser">
-<status status="FAIL" endtime="20180626 14:40:10.221" critical="yes" starttime="20180626 14:40:10.220">Test case contains no keywords.</status>
+<test id="s1-t1" name="start test job">
+<kw name="Open and Navigate Browser">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LINK}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180626 14:45:47.779" level="INFO">Opening browser 'chrome' to base url 'https://dou.ua/forums/topic/13389/'</msg>
+<status status="PASS" endtime="20180626 14:45:55.272" starttime="20180626 14:45:47.779"></status>
+</kw>
+<status status="PASS" endtime="20180626 14:45:55.273" starttime="20180626 14:45:47.779"></status>
+</kw>
+<kw name="Check first title">
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>xpath=//h1</arg>
+<arg>Тестирование. Фундаментальная теория</arg>
+</arguments>
+<msg timestamp="20180626 14:45:55.274" level="INFO">Verifying element 'xpath=//h1' contains text 'Тестирование. Фундаментальная теория'.</msg>
+<status status="PASS" endtime="20180626 14:45:55.311" starttime="20180626 14:45:55.274"></status>
+</kw>
+<status status="PASS" endtime="20180626 14:45:55.311" starttime="20180626 14:45:55.273"></status>
+</kw>
+<kw name="End test">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180626 14:45:58.429" starttime="20180626 14:45:55.312"></status>
+</kw>
+<status status="PASS" endtime="20180626 14:45:58.429" starttime="20180626 14:45:55.312"></status>
+</kw>
+<status status="PASS" endtime="20180626 14:45:58.430" critical="yes" starttime="20180626 14:45:47.778"></status>
 </test>
-<test id="s1-t2" name="Check first title">
-<status status="FAIL" endtime="20180626 14:40:10.222" critical="yes" starttime="20180626 14:40:10.222">Test case contains no keywords.</status>
-</test>
-<test id="s1-t3" name="End test">
-<status status="FAIL" endtime="20180626 14:40:10.223" critical="yes" starttime="20180626 14:40:10.223">Test case contains no keywords.</status>
-</test>
-<status status="FAIL" endtime="20180626 14:40:10.224" starttime="20180626 14:40:10.120"></status>
+<status status="PASS" endtime="20180626 14:45:58.436" starttime="20180626 14:45:46.661"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="3" pass="0">Critical Tests</stat>
-<stat fail="3" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="3" id="s1" name="JenkinsJobTest" pass="0">JenkinsJobTest</stat>
+<stat fail="0" id="s1" name="JenkinsJobTest" pass="1">JenkinsJobTest</stat>
 </suite>
 </statistics>
 <errors>
