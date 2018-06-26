@@ -6,9 +6,10 @@ ${BROWSER}      chrome
 ${LINK}         https://dou.ua/forums/topic/13389/
 
 *** Test Cases ***
-Open and Navigate Browser
-Check first title
-End test
+start test job
+	Open and Navigate Browser
+	heck first title
+	End test
 
 *** Keywords ***
 Open and Navigate Browser

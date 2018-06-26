@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180626 14:40:10.118" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Admin\Desktop\JenkinsTestJob\JenkinsJobTest\JenkinsJobTest.robot" id="s1" name="JenkinsJobTest">
+<test id="s1-t1" name="Open and Navigate Browser">
+<status status="FAIL" endtime="20180626 14:40:10.221" critical="yes" starttime="20180626 14:40:10.220">Test case contains no keywords.</status>
+</test>
+<test id="s1-t2" name="Check first title">
+<status status="FAIL" endtime="20180626 14:40:10.222" critical="yes" starttime="20180626 14:40:10.222">Test case contains no keywords.</status>
+</test>
+<test id="s1-t3" name="End test">
+<status status="FAIL" endtime="20180626 14:40:10.223" critical="yes" starttime="20180626 14:40:10.223">Test case contains no keywords.</status>
+</test>
+<status status="FAIL" endtime="20180626 14:40:10.224" starttime="20180626 14:40:10.120"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="0">Critical Tests</stat>
+<stat fail="3" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="JenkinsJobTest" pass="0">JenkinsJobTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
